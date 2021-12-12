@@ -81,6 +81,51 @@
       background: rgb(255, 255, 255);
       padding: 50px 75px 75px;
     }
+
+    @media screen and (max-width: 767px) {
+      .custom-navbar {
+        height: 80px;
+      }
+
+      .custom-navbar .container-fluid {
+        margin-right: 0;
+        justify-content: flex-end;
+      }
+
+      .navbar-toggler {
+        padding: 0;
+        margin-right: 24px;
+        border: 0;
+        font-size: 26px;
+        box-shadow: none;
+        outline: 0;
+      }
+
+      .navbar-brand {
+        display: none;
+      }
+
+      .custom-navbar .navbar-collapse {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: white;
+      }
+      .navbar-nav{
+        margin-right: 0 !important;
+      }
+
+      .nav-link {
+        margin: 48px auto 16px;
+        font-size: 18px;
+        font-weight: 700;
+        color: rgb(65, 64, 66) !important;
+        display: block;
+        position: relative;
+        padding: 0px 8px;
+      }
+    }
   </style>
 </head>
 
